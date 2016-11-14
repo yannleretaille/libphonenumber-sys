@@ -1,0 +1,12 @@
+[dependencies]
+cpp_utils = "0.1"
+libc = "0.2"
+
+[package]
+authors = ["Yann Leretaille <yleretaille@gmail.com>"]
+build = "build.rs"
+name = "libphonenumber-sys"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/rust-qt/cpp_to_rust"
+description = "rust ffi bindings to libphonenumber"

@@ -1,0 +1,13 @@
+--- phonenumberutil.rs	2016-11-13 04:08:54.475763000 +0100
++++ phonenumberutil.rs	2016-11-13 04:10:52.650593385 +0100
+@@ -22,6 +22,10 @@
+     }
+ 
+     impl PhoneNumberUtil {
++      //added
++      pub fn new() -> PhoneNumberUtil {
++        PhoneNumberUtil { _buffer: [0;56] }
++      }
+       /// C++ method: <span style='color: green;'>```bool i18n::phonenumbers::PhoneNumberUtil::GetExampleNumberForNonGeoEntity(int country_calling_code, i18n::phonenumbers::PhoneNumber* number) const```</span>
+       ///
+       ///
