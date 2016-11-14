@@ -317,7 +317,7 @@ pub mod i18n {
         args.exec(self)
       }*/
 	  pub fn new<'a>() -> &'a mut PhoneNumber {
-	    let mut ffi_result =  unsafe { ::ffi::libphonenumber_sys_c_i18n_phonenumbers_PhoneNumber_new_no_args()};
+	    let ffi_result =  unsafe { ::ffi::libphonenumber_sys_c_i18n_phonenumbers_PhoneNumber_new_no_args()};
 		unsafe { &mut *ffi_result}
 	  }
       /// C++ method: <span style='color: green;'>```i18n::phonenumbers::PhoneNumber::PhoneNumber```</span>
