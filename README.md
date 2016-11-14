@@ -4,7 +4,7 @@ This is a very early atempt to create rust ffi bindings to googles excellent <a 
 Many functions are not properly implemented yet, especially the ones that take or emit std::strings, as they require additional modifications to the c wrapper.
 
 ## Example
-```
+```rust
 use libphonenumber_sys::{PhoneNumberUtil,PhoneNumber,PhoneNumberFormat,PhoneNumberUtilError};
 
 //get instance of PhoneNumberUtil
